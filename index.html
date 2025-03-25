@@ -4,39 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>BMI</title>
+    <title>BMI Calculator</title>
 </head>
 <body>
 
     <div class="wrapper">
 
         <div class="headS">
-            <label>Height  : </label>
-            <input type="number" id="Height" placeholder="Enter the Height">
+            <label for="Height">Height (cm):</label>
+            <input type="number" id="Height" placeholder="Enter your height" />
         </div>
-        
-        <br><br>
 
         <div class="headS">
-            <label>Weight  :</label>
-            <input type="number" id="Weight" placeholder="Enter the Weight">
+            <label for="Weight">Weight (kg):</label>
+            <input type="number" id="Weight" placeholder="Enter your weight" />
         </div>
-
-        <br><br>
 
         <div class="calculate">
             <button id="BMI" onclick="calcBMI()">Calculate BMI</button>
         </div>
 
-        <br><br>
-
         <div class="out">
             <div class="vals">
-                <p>Value : </p>
-                <br>
+                <p>Value: </p>
                 <p id="content"></p>
             </div>
-            
+
             <div class="color"></div>
         </div>
         
